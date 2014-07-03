@@ -12,9 +12,8 @@
     </table>
 </div>
 
-<div id="flows">
-</div>
-<div id="servers"> </div>
+<div id="flows"> </div>
+<div id="servers" style="height: 100%; width: 100%; position:absolute;"> </div>
 
 <script type="text/template" id="flowsTemplate">
 	<div>
@@ -141,19 +140,19 @@ $('#servers').cytoscape({
   elements: {
     nodes: [
       { data: { id: 'localhost(2766)<v1>:52021' } },
-      { data: { id: 'localhost(2766)<v1>:20173' } },
-      { data: { id: 'localhost(2766)<v1>:39381' } },
-      { data: { id: 'localhost(2766)<v1>:16699' } },
-      { data: { id: 'sentences', parent: 'localhost(2779)<v2>:52021' } },
-      { data: { id: 'shuffle_sender', parent: 'localhost(2779)<v2>:52021' } },
+      { data: { id: 'localhost(2779)<v2>:20173' } },
+      { data: { id: 'localhost(2792)<v3>:39381' } },
+      { data: { id: 'localhost(2805)<v4>:16699' } },
+      { data: { id: 'sentences', parent: 'localhost(2766)<v1>:52021' } },
+      { data: { id: 'shuffle_sender', parent: 'localhost(2766)<v1>:52021' } },
       { data: { id: 'shuffle_receiver1', parent: 'localhost(2779)<v2>:20173' } },
-      { data: { id: 'shuffle_receiver2', parent: 'localhost(2779)<v2>:39381' } },
-      { data: { id: 'split', parent: 'localhost(2779)<v2>:20173' } },
-      { data: { id: 'split', parent: 'localhost(2779)<v2>:39381' } },
+      { data: { id: 'shuffle_receiver2', parent: 'localhost(2792)<v3>:39381' } },
+      { data: { id: 'split1', parent: 'localhost(2779)<v2>:20173' } },
+      { data: { id: 'split2', parent: 'localhost(2792)<v3>:39381' } },
       { data: { id: 'byWord_sender1', parent: 'localhost(2779)<v2>:20173' } },
-      { data: { id: 'byWord_sender2', parent: 'localhost(2779)<v2>:39381' } },
-      { data: { id: 'byWord_receiver', parent: 'localhost(2779)<v2>:16699' } },
-      { data: { id: 'count', parent: 'localhost(2779)<v2>:16699' } }
+      { data: { id: 'byWord_sender2', parent: 'localhost(2792)<v3>:39381' } },
+      { data: { id: 'byWord_receiver', parent: 'localhost(2805)<v4>:16699' } },
+      { data: { id: 'count', parent: 'localhost(2805)<v4>:16699' } }
     ],
     edges: [
       { data: { id: 'shuffle1', source: 'shuffle_sender', target: 'shuffle_receiver1' } },
